@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 210 20% 12%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 210 20% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 195 100% 50%;
+    --primary-foreground: 210 20% 8%;
+
+    --secondary: 210 20% 15%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 210 20% 15%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 195 100% 50%;
+    --accent-foreground: 210 20% 8%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 20% 20%;
+    --input: 210 20% 20%;
+    --ring: 195 100% 50%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    background-image: 
+      radial-gradient(circle at 25% 25%, rgba(0, 212, 255, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, rgba(57, 255, 20, 0.1) 0%, transparent 50%);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary) / 0.8);
+  }
+}
+
+@layer components {
+  .text-gradient {
+    @apply bg-gradient-to-r from-neon-blue to-neon-cyan bg-clip-text text-transparent;
+  }
+
+  .glow-border {
+    @apply border border-neon-blue/30 shadow-[0_0_10px_rgba(0,212,255,0.3)];
+  }
+
+  .tech-card {
+    @apply bg-card/50 backdrop-blur-sm border border-white/10 rounded-lg p-6 hover:border-neon-blue/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,212,255,0.2)];
+  }
+
+  .section-padding {
+    @apply py-20 px-4 sm:px-6 lg:px-8;
+  }
+}
