@@ -7,7 +7,7 @@ import { componentTagger } from "lovable-tagger";
 export default defineConfig(({ mode }) => ({
   base: "/Portfolio/",
   build: {
-    sourcemap: true,
+    sourcemap: false,
   },
   server: {
     host: "::",
