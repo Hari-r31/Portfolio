@@ -5,6 +5,8 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Mail, Phone, Linkedin, Github } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import emailjs from '@emailjs/browser';
+
 
 const Contact = () => {
   const { toast } = useToast();
@@ -52,16 +54,35 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      subject: formData.subject,
+      message: formData.message,
+    };
+
+    emailjs.send(
+      'service_y0i9w1b',       
+      'template_ez57fdf',     
+      templateParams,
+      '4zafHynJ69vHj0hYQ'    
+    ).then(() => {
       toast({
         title: "Message Sent!",
         description: "Thank you for your message. I'll get back to you soon!",
       });
       setFormData({ name: '', email: '', subject: '', message: '' });
       setIsSubmitting(false);
-    }, 1000);
+    }).catch((error) => {
+      toast({
+        title: "Message Failed!",
+        description: `Something went wrong. ${error.text}`,
+        variant: "destructive",
+      });
+      setIsSubmitting(false);
+    });
   };
+
 
   return (
     <section id="contact" className="section-padding bg-gradient-to-b from-background to-dark-800/50">

@@ -14,7 +14,7 @@ const Projects = () => {
       description: 'Comprehensive plant health monitoring system combining AI image recognition with IoT sensors.',
       fullDescription: 'An advanced plant health monitoring system that uses computer vision to diagnose plant diseases and IoT sensors to monitor environmental conditions. The system provides real-time alerts and treatment recommendations through a responsive web interface.',
       image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&h=400&fit=crop',
-      technologies: ['Python', 'FastAPI', 'React', 'OpenAI API', 'ESP32', 'PostgreSQL', 'Docker'],
+      technologies: ['AI Integration', 'API Development', 'Embedded Systems', 'FastAPI', 'Flask', 'IoT Systems', 'Machine Learning', 'React.js', 'Supabase'],
       features: [
         'AI-powered disease detection using computer vision',
         'Real-time sensor monitoring (soil moisture, temperature, humidity)',
@@ -22,18 +22,17 @@ const Projects = () => {
         'Treatment recommendation engine',
         'Historical data analytics and reporting'
       ],
-      github: 'https://github.com/Hari-r31',
-      demo: '#',
+      github: 'https://github.com/Hari-r31/smart-plant-doctor',
       status: 'Completed'
     },
     {
       id: 2,
       title: 'E-commerce Platform',
-      subtitle: 'Django + Razorpay Integration',
+      subtitle: 'Django + ORM + Razorpay Integration',
       description: 'Full-featured e-commerce platform with payment gateway integration and inventory management.',
       fullDescription: 'A complete e-commerce solution built with Django, featuring user authentication, product catalog, shopping cart, order management, and secure payment processing through Razorpay integration.',
       image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop',
-      technologies: ['Django', 'Python', 'PostgreSQL', 'Razorpay API', 'Bootstrap', 'JavaScript'],
+      technologies: ['Web Application Development', 'HTML5', 'CSS3', 'JavaScript', 'PostgreSQL', 'Razorpay', 'Django', 'REST APIs',],
       features: [
         'User authentication and profile management',
         'Product catalog with search and filtering',
@@ -42,18 +41,17 @@ const Projects = () => {
         'Order tracking and management',
         'Admin dashboard for inventory management'
       ],
-      github: 'https://github.com/Hari-r31',
-      demo: '#',
+      github: 'https://github.com/Hari-r31/Ecommerce-Website',
       status: 'Completed'
     },
     {
       id: 3,
-      title: 'IoT Fish Pond Monitoring',
-      subtitle: 'Sensors + Blynk + Twilio',
+      title: 'IoT Pond Monitoring & Prod Enchancement System',
+      subtitle: 'Sensors + Blynk + Twilio + Acutators',
       description: 'Smart aquaculture monitoring system with automated alerts and environmental control.',
       fullDescription: 'An IoT solution for fish pond monitoring that tracks water quality parameters and sends automated alerts via SMS when conditions require attention. Features remote monitoring through Blynk app.',
       image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&h=400&fit=crop',
-      technologies: ['ESP32', 'Blynk', 'Twilio API', 'C++', 'IoT Sensors', 'Mobile App'],
+      technologies: ['Embedded C', 'IoT Sensors', 'Twilio API', 'ESP32', 'Blynk', 'Mobile App', 'Motors'],
       features: [
         'Real-time water quality monitoring',
         'Automated SMS alerts via Twilio',
@@ -61,8 +59,7 @@ const Projects = () => {
         'Data logging and historical trends',
         'Automated feeding system integration'
       ],
-      github: 'https://github.com/Hari-r31',
-      demo: '#',
+      github: 'https://github.com/Hari-r31/IOT-Based-Fish-Pond-Monitoring-its-Production-Enhancement-System',
       status: 'Completed'
     },
     {
@@ -80,28 +77,26 @@ const Projects = () => {
         'SEO-optimized article pages',
         'Responsive design for all devices'
       ],
-      github: 'https://github.com/Hari-r31',
-      demo: '#',
+      github: 'https://github.com/Hari-r31/Blog-Applicaion',
       status: 'Completed'
     },
     {
       id: 5,
-      title: 'Li-Fi Vehicle Communication',
-      subtitle: 'Embedded Systems Project',
-      description: 'Vehicle-to-vehicle communication system using Light Fidelity technology.',
-      fullDescription: 'An innovative communication system for vehicles using Li-Fi technology to enable high-speed data transmission between vehicles for safety and traffic management applications.',
-      image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&h=400&fit=crop',
-      technologies: ['Arduino', 'C++', 'LED Arrays', 'Photodiodes', 'Signal Processing'],
+      title: 'Conversational-AI-Simple-FAQ-Bot-LangGraph',
+      subtitle: 'FAQ-Bot',
+      description: 'A terminal-based conversational FAQ bot using LangGraph and fuzzy matching.',
+      fullDescription: 'An intelligent command-line chatbot that uses LangGraph to simulate natural conversations and answer frequently asked questions. Built with Python and fuzzy matching to find the best response from a JSON dataset of Q&A pairs.',
+      image: 'https://i.postimg.cc/J79NwhRg/lang.png',
+      technologies: ['Python', 'LangGraph', 'FuzzyWuzzy', 'JSON', 'CLI'],
       features: [
-        'High-speed Li-Fi data transmission',
-        'Vehicle-to-vehicle communication protocol',
-        'Real-time traffic data sharing',
-        'Safety alert system',
-        'Low-latency emergency communications'
+        'LangGraph-powered stateful conversation flow',
+        'Fuzzy matching for flexible user queries',
+        'Command-line interface for easy use',
+        'Editable FAQ dataset via JSON',
+        'Lightweight and offline-capable'
       ],
-      github: 'https://github.com/Hari-r31',
-      demo: '#',
-      status: 'Research Project'
+      github: 'https://github.com/Hari-r31/Conversational-AI-Simple-FAQ-Bot-LangGraph-',
+      status: 'Completed'
     },
     {
       id: 6,
@@ -118,8 +113,7 @@ const Projects = () => {
         'Multiple display modes and animations',
         'Mobile-responsive control panel'
       ],
-      github: 'https://github.com/Hari-r31',
-      demo: '#',
+      github: '#',
       status: 'Completed'
     }
   ];
@@ -236,12 +230,6 @@ const Projects = () => {
                               <a href={selectedProject.github} target="_blank" rel="noopener noreferrer">
                                 <Github className="w-4 h-4 mr-2" />
                                 View Code
-                              </a>
-                            </Button>
-                            <Button asChild variant="outline" className="border-neon-blue/50 text-neon-blue hover:bg-neon-blue/10">
-                              <a href={selectedProject.demo} target="_blank" rel="noopener noreferrer">
-                                <ExternalLink className="w-4 h-4 mr-2" />
-                                Live Demo
                               </a>
                             </Button>
                           </div>

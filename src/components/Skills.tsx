@@ -8,41 +8,48 @@ const Skills = () => {
       title: 'Programming',
       icon: '</>',
       skills: [
-        { name: 'Python', level: 95, color: 'bg-yellow-500' },
-        { name: 'JavaScript', level: 88, color: 'bg-yellow-400' },
         { name: 'C', level: 85, color: 'bg-blue-500' },
-        { name: 'SQL', level: 90, color: 'bg-orange-500' }
+        { name: 'Python', level: 95, color: 'bg-green-500' },
+        { name: 'Go (Golang)', level: 78, color: 'bg-yellow-400' },
+        { name: 'R', level: 78, color: 'bg-pink-400' },
       ]
     },
     web: {
       title: 'Web Development',
       icon: '🌐',
       skills: [
+        { name: 'HTML5', level: 90, color: 'bg-orange-500' },
+        { name: 'CSS3', level: 90, color: 'bg-green-500' },
+        { name: 'JavaScript', level: 78, color: 'bg-yellow-400' },
         { name: 'React.js', level: 92, color: 'bg-cyan-500' },
-        { name: 'Django', level: 88, color: 'bg-green-600' },
-        { name: 'FastAPI', level: 95, color: 'bg-teal-500' },
-        { name: 'Flask', level: 85, color: 'bg-gray-600' },
-        { name: 'HTML5/CSS3', level: 90, color: 'bg-orange-500' }
       ]
     },
     database: {
       title: 'Database & Backend',
       icon: '🗄️',
       skills: [
-        { name: 'PostgreSQL', level: 90, color: 'bg-blue-600' },
-        { name: 'Supabase', level: 88, color: 'bg-green-500' },
-        { name: 'MySQL', level: 85, color: 'bg-blue-500' },
-        { name: 'RESTful APIs', level: 93, color: 'bg-purple-500' }
+        { name: 'SQL', level: 95, color: 'bg-orange-500' },
+        { name: 'MySQL', level: 90, color: 'bg-blue-500' },
+        { name: 'PostgreSQL', level: 95, color: 'bg-pink-600' },
+        { name: 'Supabase', level: 80, color: 'bg-green-500' },
+        { name: 'RESTful APIs', level: 93, color: 'bg-purple-500' },
+        { name: 'Django', level: 94, color: 'bg-yellow-600' },
+        { name: 'FastAPI', level: 95, color: 'bg-teal-500' },
+        { name: 'Flask', level: 91, color: 'bg-gray-600' },
       ]
     },
     devops: {
-      title: 'DevOps & Tools',
+      title: 'DevOps, Cloud & Tools',
       icon: '⚙️',
       skills: [
-        { name: 'Docker', level: 85, color: 'bg-blue-500' },
-        { name: 'GitHub Actions', level: 80, color: 'bg-gray-700' },
-        { name: 'Azure Functions', level: 82, color: 'bg-blue-600' },
-        { name: 'CI/CD', level: 78, color: 'bg-green-500' }
+        { name: 'Git', level: 85, color: 'bg-red-500' },
+        { name: 'GitHub Actions', level: 80, color: 'bg-blue-700' },
+        { name: 'CI/CD', level: 78, color: 'bg-green-500' },
+        { name: 'Docker', level: 86, color: 'bg-yellow-500' },
+        { name: 'Microsoft Azure', level: 90, color: 'bg-white-600' },
+        { name: 'AWS', level: 85, color: 'bg-pink-600' },
+        { name: 'Google Cloud (GCP)', level: 82, color: 'bg-orange-600' },
+
       ]
     },
     ai: {
@@ -51,18 +58,21 @@ const Skills = () => {
       skills: [
         { name: 'Pandas', level: 88, color: 'bg-purple-600' },
         { name: 'NumPy', level: 85, color: 'bg-blue-500' },
-        { name: 'OpenAI API', level: 90, color: 'bg-green-500' },
-        { name: 'Data Analysis', level: 82, color: 'bg-yellow-500' }
+        { name: 'TensorFlow', level: 90, color: 'bg-green-500' },
+        { name: 'PyTorch', level: 82, color: 'bg-yellow-500' },
+        { name: 'Scikit-learn', level: 82, color: 'bg-yellow-500' },
       ]
     },
     embedded: {
       title: 'Embedded & IoT',
       icon: '🔧',
       skills: [
-        { name: 'ESP32', level: 92, color: 'bg-red-500' },
-        { name: 'NodeMCU', level: 90, color: 'bg-blue-500' },
+        { name: 'Micro-controllers', level: 92, color: 'bg-red-500' },
+        { name: 'Embedded C', level: 90, color: 'bg-blue-500' },
         { name: 'IoT Sensors', level: 88, color: 'bg-green-500' },
-        { name: 'Arduino IDE', level: 85, color: 'bg-teal-500' }
+        { name: 'Arduino IDE', level: 85, color: 'bg-teal-500' },
+        { name: 'UART / SPI / I2C', level: 82, color: 'bg-yellow-500' },
+        { name: 'Real-Time Data Monitoring', level: 81, color: 'bg-pink-500' }
       ]
     }
   };
