@@ -17,7 +17,7 @@ const Services = () => {
         'Real-time features and notifications'
       ],
       technologies: ['React', 'FastAPI', 'Django', 'PostgreSQL', 'Docker', 'Azure'],
-      pricing: 'Starting from ₹25,000'
+      pricing: 'Starting from ₹20,000'
     },
     {
       icon: '🔧',

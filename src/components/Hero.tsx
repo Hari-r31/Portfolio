@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Mail, Phone } from 'lucide-react';
+import { Github, Linkedin, Mail, Phone, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
@@ -8,6 +8,7 @@ const Hero = () => {
     { icon: Linkedin, href: 'https://www.linkedin.com/in/harisaithatholu/', label: 'LinkedIn' },
     { icon: Mail, href: 'mailto:Harisaikumar06@gmail.com', label: 'Email' },
     { icon: Phone, href: 'tel:+919491147433', label: 'Phone' },
+    { icon: Instagram, href: 'https://www.instagram.com/har_is_ai/', label: 'Instagram' },
   ];
 
   return (
@@ -30,7 +31,7 @@ const Hero = () => {
                 <span className="text-foreground">Thatholu</span>
               </h1>
               <p className="text-xl md:text-2xl text-neon-blue font-mono">
-                Associate Software Developer | Embedded Systems Innovator | Python & FastAPI Specialist | IoT & Cloud Enthusiast
+              Co-founder at thebuild.in | Associate Software Developer | Embedded Systems Innovator | Python & FastAPI Specialist | IoT & Cloud Enthusiast
               </p>
             </div>
 
@@ -73,6 +74,17 @@ const Hero = () => {
               >
                 Get In Touch
               </Button>
+
+
+            <a href="https://thebuild.in" target="_blank">
+              <Button 
+                size="lg"
+                className="bg-gradient-to-r from-neon-blue to-neon-cyan text-black font-semibold hover:shadow-[0_0_20px_rgba(0,212,255,0.5)] transition-all duration-300"
+              >
+                My Startup
+              </Button>
+            </a>
+
             </div>
           </div>
 
